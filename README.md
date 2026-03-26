@@ -1,3 +1,3 @@
-# Welcome to your Lovable project
+# Suman Shekhar - Software Developer Portfolio
 
-TODO: Document your project here
+A personal portfolio showcasing my projects, skills, and experience in MERN stack development.
