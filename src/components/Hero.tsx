@@ -98,10 +98,10 @@ const Hero = () => {
           </a>
           <button
             onClick={() => {
-              window.open("/resume.pdf", "_blank");
+              window.open("/suman_shekhar_resume.pdf", "_blank");
               const link = document.createElement("a");
-              link.href = "/resume.pdf";
-              link.download = "suman_resume.pdf";
+              link.href = "/suman_shekhar_resume.pdf";
+              link.download = "suman_shekhar_resume.pdf";
               link.click();
             }}
             className="inline-flex items-center gap-2 px-6 py-3 border border-border rounded-lg text-sm font-medium text-foreground hover:bg-secondary transition-colors"
