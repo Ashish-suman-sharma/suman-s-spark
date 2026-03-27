@@ -98,9 +98,9 @@ const Hero = () => {
           </a>
           <button
             onClick={() => {
-              window.open("/suman_shekhar_resume.pdf", "_blank");
+              window.open("/resume/suman_shekhar_resume.pdf", "_blank");
               const link = document.createElement("a");
-              link.href = "/suman_shekhar_resume.pdf";
+              link.href = "/resume/suman_shekhar_resume.pdf";
               link.download = "suman_shekhar_resume.pdf";
               link.click();
             }}
