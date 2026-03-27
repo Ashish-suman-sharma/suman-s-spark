@@ -42,12 +42,12 @@ const Hero = () => {
       {/* Grid pattern */}
       <div className="absolute inset-0 bg-[linear-gradient(hsl(var(--border)/0.3)_1px,transparent_1px),linear-gradient(90deg,hsl(var(--border)/0.3)_1px,transparent_1px)] bg-[size:60px_60px] opacity-30" />
 
-      <div className="relative z-10 text-center px-6 max-w-3xl">
+      <div className="relative z-10 text-center px-6 max-w-3xl mt-20">
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
-          className="text-primary font-mono text-sm mb-4 tracking-widest uppercase"
+          className="text-primary font-mono text-base md:text-lg mb-2 tracking-widest uppercase"
         >
           Hello, I'm
         </motion.p>
@@ -56,7 +56,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4, duration: 0.6 }}
-          className="text-5xl md:text-7xl font-bold mb-4 text-foreground"
+          className="text-5xl md:text-7xl font-bold mb-2 text-foreground"
         >
           Suman Shekhar
         </motion.h1>
@@ -65,7 +65,7 @@ const Hero = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.7 }}
-          className="h-10 mb-6"
+          className="h-10 mb-2"
         >
           <span className="text-xl md:text-2xl text-muted-foreground font-light">
             {text}
@@ -77,7 +77,7 @@ const Hero = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.9 }}
-          className="text-muted-foreground text-base md:text-lg mb-10 max-w-xl mx-auto leading-relaxed"
+          className="text-muted-foreground text-base md:text-lg mb-4 max-w-xl mx-auto leading-relaxed"
         >
           Aspiring Software Developer based in Bengaluru, India.
           Passionate about building modern web applications with clean code.
@@ -96,13 +96,18 @@ const Hero = () => {
           >
             <Mail className="w-4 h-4" /> Contact Me
           </a>
-          <a
-            href="/resume.pdf"
-            download
+          <button
+            onClick={() => {
+              window.open("/resume.pdf", "_blank");
+              const link = document.createElement("a");
+              link.href = "/resume.pdf";
+              link.download = "suman_resume.pdf";
+              link.click();
+            }}
             className="inline-flex items-center gap-2 px-6 py-3 border border-border rounded-lg text-sm font-medium text-foreground hover:bg-secondary transition-colors"
           >
             <Download className="w-4 h-4" /> Download Resume
-          </a>
+          </button>
         </motion.div>
 
         <motion.div
@@ -111,7 +116,7 @@ const Hero = () => {
           transition={{ delay: 1.5 }}
           className="mt-20"
         >
-          <ArrowDown className="w-5 h-5 text-muted-foreground mx-auto animate-bounce" />
+          <ArrowDown className="w-8 h-8 text-primary mx-auto animate-bounce" />
         </motion.div>
       </div>
     </section>

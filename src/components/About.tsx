@@ -1,15 +1,18 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import { Code2, Database, Globe, Server, Brain } from "lucide-react";
+import { Code2, Database, Globe, Server, Brain, Code, Zap, Layers } from "lucide-react";
 
 const skills = [
   { name: "React", icon: Code2 },
   { name: "Node.js", icon: Server },
   { name: "Express.js", icon: Globe },
   { name: "MongoDB", icon: Database },
+  { name: "JavaScript", icon: Code },
+  { name: "SQL", icon: Database },
   { name: "DSA", icon: Brain },
-  { name: "TypeScript", icon: Code2 },
+  { name: "Java", icon: Code2 },
+  { name: "REST API", icon: Zap },
 ];
 
 const About = () => {
@@ -42,8 +45,8 @@ const About = () => {
               passionate about building full-stack web applications using the MERN stack.
             </p>
             <p className="text-muted-foreground leading-relaxed mb-4">
-              I've gained hands-on experience as a Web Developer Intern at Skyhigh Technologies
-              (July–August 2025), where I worked on real-world projects and sharpened my
+              I've gained hands-on experience as a Web Developer at crio.do under fellowship
+              (May 2025–March 2026), where I worked on real-world projects and sharpened my
               software development skills.
             </p>
             <p className="text-muted-foreground leading-relaxed">

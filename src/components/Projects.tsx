@@ -4,25 +4,46 @@ import { ExternalLink, Github } from "lucide-react";
 
 const projects = [
   {
-    title: "E-Commerce Platform",
-    description: "A full-stack e-commerce web app with product listings, cart management, user auth, and payment integration.",
-    tech: ["React", "Node.js", "MongoDB", "Express"],
-    live: "#",
+    title: "QTrip - Travel Website",
+    description: "A dynamic travel website with multi-select filters, image carousels, and localStorage for user preferences. Built with HTML, CSS, and JavaScript.",
+    tech: ["HTML", "CSS", "JavaScript", "Bootstrap", "REST"],
+    live: "https://qtripdynamic-lake.vercel.app/",
+    github: "https://github.com/sekhar42/sumanfly06-ME_QTRIPDYNAMIC",
+  },
+  {
+    title: "XBoard - News Feed",
+    description: "A news feed website that fetches latest news from Flipboard's RSS feed. Features accordions and image carousels for improved UI.",
+    tech: ["HTML", "CSS", "Bootstrap", "JavaScript", "REST API"],
+    live: "https://xboard-criofrontend.netlify.app/",
     github: "#",
   },
   {
-    title: "Task Management App",
-    description: "A real-time task manager with drag-and-drop boards, team collaboration, and deadline tracking.",
-    tech: ["React", "Firebase", "Tailwind CSS"],
-    live: "#",
-    github: "#",
+    title: "E-Commerce App",
+    description: "A full-featured e-commerce application with authentication, shopping cart, checkout, and REST API integration for dynamic data loading.",
+    tech: ["React", "REST API", "React Router", "Material UI", "localStorage"],
+    live: "https://sumancrioqkartfrontend.vercel.app/",
+    github: "https://github.com/sekhar42/sumanfly06-ME_QKART_FRONTEND_V2",
   },
   {
-    title: "Portfolio Website",
-    description: "A modern animated portfolio website built with React, Framer Motion and Tailwind CSS.",
-    tech: ["React", "Framer Motion", "Tailwind"],
-    live: "#",
-    github: "#",
+    title: "Medify - Medical Center Finder",
+    description: "A React app to search medical centers by state/city, view hospitals, and book appointments with date/time selection and booking history.",
+    tech: ["React", "JavaScript", "API Integration", "React Router", "localStorage"],
+    live: "https://medify-pi-lemon.vercel.app/",
+    github: "https://github.com/sekhar42/medify",
+  },
+  {
+    title: "Expense Tracker",
+    description: "A responsive expense tracking application with CRUD operations, wallet balance control, visual analytics, and localStorage persistence.",
+    tech: ["React", "JavaScript", "State Management", "Charts", "localStorage"],
+    live: "https://expense-tracker-rho-pink.vercel.app/",
+    github: "https://github.com/sekhar42/expense-tracker",
+  },
+  {
+    title: "Spotify Clone",
+    description: "A music browsing application with React, Material UI, and Swiper carousel. Browse songs by albums and genres with a seamless UI.",
+    tech: ["React", "Material UI", "Swiper Library", "CSS Modules", "Flexbox"],
+    live: "https://qtify-nine-flame.vercel.app/",
+    github: "https://github.com/sekhar42/qtify-project",
   },
 ];
 
@@ -68,10 +89,10 @@ const Projects = () => {
                 ))}
               </div>
               <div className="flex items-center gap-3">
-                <a href={project.live} className="text-muted-foreground hover:text-primary transition-colors">
+                <a href={project.live} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
                   <ExternalLink className="w-4 h-4" />
                 </a>
-                <a href={project.github} className="text-muted-foreground hover:text-primary transition-colors">
+                <a href={project.github} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
                   <Github className="w-4 h-4" />
                 </a>
               </div>
